@@ -190,13 +190,3 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-    .styled-divTitle {
-        width: 90%;
-        padding: 10px;
-    }
-    .btnChoice {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
