@@ -38,7 +38,7 @@ header{
 }
 
 .styled-divTitle h3 {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 24;
     text-align: left;
     color: black;
@@ -146,6 +146,7 @@ header{
     justify-content: center; 
     align-items: center; 
     margin-top: 20px; 
+    flex-wrap: wrap;
 }
 
 .hidden {
@@ -185,4 +186,35 @@ header{
 }
 a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .styled-divTitle {
+        width: 90%;
+        padding: 10px;
+    }
+    .btnChoice {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .styled-divTitle {
+        width: 80%; /* Adjust as needed */
+        padding: 15px; /* Adjust padding for tablets */
+    }
+    .btnChoice {
+        width: 48%; /* Example: Two buttons per row */
+        margin: 5px; /* Adjust margin as needed */
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .styled-divTitle {
+        width: 600px; /* Maximum width for desktops */
+        padding: 20px; /* Adjust padding for desktops */
+    }
+    .btnChoice {
+        width: auto; /* Reset width for default behavior */
+        margin: 10px; /* Adjust margin for desktops */
+    }
 }
